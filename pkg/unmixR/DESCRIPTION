@@ -1,0 +1,61 @@
+Package: unmixR
+Type: Package
+Title: Hyperspectral Unmixing Methods
+Version: 0.2.339
+Date: 2016-08-28
+Authors@R: c(person("Anton", "Belov", role = "aut"),
+	person("Conor", "McManus", role = "aut"),
+	person("Claudia", "Beleites", role = c("aut", "cre"),
+		email ="chemometrie@beleites.de"),
+	person("Bryan A.", "Hanson", role = "aut"),
+	person("Simon", "Fuller", role = "aut"))
+Description: Functions implementing the N-FINDR, Iterated Constrained
+    Endmembers (ICE) and Vertex Component Analysis (VCA) algorithms which can
+    recover pure component spectra and their respective concentrations from a
+    hyperspectral data set.
+URL: https://gitlab.com/chemometrics/unmixR
+BugReports: https://gitlab.com/chemometrics/unmixR/issues
+License: GPL (>= 3)
+ByteCompile: TRUE
+Depends:
+    R (>= 3.0),
+    hyperSpec,
+    MASS,
+    nnls
+Suggests:
+    knitr,
+    plot3D,
+    scatterplot3d,
+    ggplot2,
+    rbenchmark
+Imports:
+    testthat,
+    settings,
+    limSolve,
+    matrixcalc
+VignetteBuilder: knitr
+Collate:
+    'demo_data.R'
+    'dimensionalityReduction.R'
+    'endmembers.R'
+    'estSNR.R'
+    'getimplementations.R'
+    'ice.R'
+    'unmixR-package.R'
+    'nfindr.R'
+    'nfindr.default.R'
+    'nfindr.formula.R'
+    'nfindr99.R'
+    'nfindrBrute.R'
+    'nfindrLDU.R'
+    'nfindrSeqLDU.R'
+    'options.R'
+    'predict.R'
+    'simplex.R'
+    'unittests.R'
+    'vca.R'
+    'vca.default.R'
+    'vca.formula.R'
+    'vca05.R'
+    'vcaLopez2012.R'
+RoxygenNote: 5.0.1
